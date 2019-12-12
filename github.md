@@ -74,4 +74,29 @@
     #git 出现>无法操作的解决方法  ctrl + d
     
     #git修改远程仓库源
+         添加远程仓库源git remote add origin +仓库地址
+        1.首先要移除以前的远程仓库
+        git remote rm origin
+        2.然后再添加新的
+        git remote add origin +仓库地址
+    
+    #注（将远程仓库拉下来出错）fatal: refusing to merge unrelated histories
+    （拒绝合并不相关的历史）
+        $git pull origin master --allow-unrelated-histories
+        
+    #通过Git上传文件或者文件夹的完整流程
+     1.首先我们要添加远程仓库源
+       git remote add origin + 仓库地址 (进入远程仓库)
+     2.然后将远程仓库的东西拉下来
+       git pull origin master
+     3.查看仓库中有哪些东西
+       dir
+     4.添加文件
+        git add + 文件名
+     5.添加文件夹
+        git
+     6.提交，添加操作说明
+        git commit -m"说明内容"
+     7.上传完之后，可以上传多个，将本次更改更新到github上去
+       git push -u origin master
 ```
