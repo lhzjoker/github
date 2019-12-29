@@ -202,6 +202,13 @@
         git commit -m"说明内容"
      7.上传完之后，可以上传多个，将本次更改更新到github上去
        git push -u origin master
+       
+    ## 如果要持续修改这个项目的话建议先把这个项目clone到本地
+            1.往仓库中添加文件,并且进入这个文件夹的目录
+            2.git add + "文件名"
+            3.git commit -m"描述内容"
+            4.git push -u origin master
+        
 ```
 
 添加当前目录下所有文件 `git add -A.` 
